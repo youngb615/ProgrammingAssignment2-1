@@ -1,3 +1,5 @@
+# make a matrix and stored its inverse matrix using cache
+
 makeCacheMatrix <- function (x =  matrix()){
         
         m <- NULL
@@ -13,6 +15,7 @@ makeCacheMatrix <- function (x =  matrix()){
              getinverse = getinverse)
 }
 
+ # if inverse matrix already stored in cache, return this value, if not recalclate inverse matrix              
 cacheSolve <-function(x,...){
         m <- x$getinverse()
         if(!is.null(m)){
